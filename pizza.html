@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Pizza Order System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <h1>Pizza Order System</h1>
+
+    <form id="pizzaForm" onsubmit="return handleSubmit(event)">
+      <div class="form-group">
+        <label for="pizzaType">Select your pizza:</label>
+        <select id="pizzaType" required>
+          <option value="Vegetarian Pizza">Vegetarian Pizza</option>
+          <option value="Hawaiian Pizza">Hawaiian Pizza</option>
+          <option value="Pepperoni Pizza">Pepperoni Pizza</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity">Number of pizzas:</label>
+        <input type="number" id="quantity" min="1" required />
+      </div>
+
+      <button type="submit">Place Order</button>
+    </form>
+
+    <div id="result"></div>
+    <script src="/pizzaPrice.js" charset="utf-8"></script>
+  </body>
+</html>
