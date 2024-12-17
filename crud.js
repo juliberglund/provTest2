@@ -43,7 +43,7 @@ const newList = {
 console.log(newList); // READ
 
 list.book1.author = "Anna"; // UPDATE
-console.log(list.book1); // UPDATED
+console.log(list.book1); // READ
 
 // ------------------------Delete
 
